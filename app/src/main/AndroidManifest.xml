@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".UserDashboardActivity" />
+        <activity android:name=".AssetsViewActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".AdminAddPanelActivity"></activity>
     </application>
 
 </manifest>
