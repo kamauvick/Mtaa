@@ -6,14 +6,30 @@
     android:background="#0F604C"
     tools:context=".SplashActivity">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="8dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="#05F195" />
 
     <ImageView
+        android:layout_width="match_parent"
         android:id="@+id/logo"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hometwo" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
-        android:padding="50dp"
-        android:src="@drawable/logo" />
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Mtaa"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="wrap_content"
