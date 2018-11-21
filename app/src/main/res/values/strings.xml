@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Mtaa</string>
     <string name="trusted_property"><![CDATA[ Trusted Property ]]></string>
+    <string name="about">Mtaa app provides a platform for property owner and real estate agent to post their assets to customers</string>
 </resources>

@@ -21,7 +21,8 @@
         <activity android:name=".UserDashboardActivity" />
         <activity android:name=".AssetsViewActivity" />
         <activity android:name=".AdminDashboardActivity" />
-        <activity android:name=".AdminAddPanelActivity"></activity>
+        <activity android:name=".AdminAddPanelActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
