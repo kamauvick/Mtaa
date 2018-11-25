@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCCCCC"
+    android:background="#FFFFFF"
     tools:context=".AdminDashboardActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
         android:orientation="vertical"
         android:weightSum="3">
 
-        <View
+        <LinearLayout
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="4dp"
-            android:background="#000fgr" />
+            android:layout_height="130dp"
+            android:background="#8DCBE5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagemenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/menutwo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imagemenu"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="bottom"
+                    android:text="Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,12 +59,13 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardHomes"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#ffffff">
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -50,27 +78,144 @@
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
                         android:scaleType="center"
-                        android:src="@drawable/houses" />
+                        android:src="@drawable/homes" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/housesico"
                         android:layout_centerInParent="true"
-                        android:text="Houses"
-                        android:textSize="23sp" />
+                        android:text="Homes"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
+            </android.support.v7.widget.CardView>
 
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPlots"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#ffffff">
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/landsico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ploti" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/landsico"
+                        android:layout_centerInParent="true"
+                        android:text="Plots"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardApartments"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/apartmentsico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/apartment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/apartmentsico"
+                        android:layout_centerInParent="true"
+                        android:text="Apartments"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardSales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/salesico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/sale" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/salesico"
+                        android:layout_centerInParent="true"
+                        android:text="Sales"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardSupport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -82,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:src="@drawable/support" />
+                        android:src="@drawable/caresupport" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -90,119 +235,19 @@
                         android:layout_below="@id/supportico"
                         android:layout_centerInParent="true"
                         android:text="Support"
-                        android:textSize="23sp" />
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
                 </RelativeLayout>
 
+            </android.support.v7.widget.CardView>
 
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAbout"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FFFFFF">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/apartmentsico"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/apartments" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/apartmentsico"
-                        android:layout_centerInParent="true"
-                        android:text="Support"
-                        android:textSize="23sp" />
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/salesico"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/sales" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/salesico"
-                        android:layout_centerInParent="true"
-                        android:text="Support"
-                        android:textSize="23sp" />
-                </RelativeLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/landsico"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/lands" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/landsico"
-                        android:layout_centerInParent="true"
-                        android:text="Support"
-                        android:textSize="23sp" />
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF">
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -213,17 +258,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/about" />
+                        android:src="@drawable/aboutone" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/aboutico"
                         android:layout_centerInParent="true"
-                        android:text="Support"
-                        android:textSize="23sp" />
+                        android:text="About"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
                 </RelativeLayout>
-            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
     </LinearLayout>

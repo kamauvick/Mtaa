@@ -3,7 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F604C"
+    android:background="#DAF8EF"
     tools:context=".AdminAddPanelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </Spinner>
+
+    </LinearLayout>
 
 </RelativeLayout>

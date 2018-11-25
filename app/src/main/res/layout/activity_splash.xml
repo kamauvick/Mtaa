@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F604C"
+    android:background="#f71982ae"
     tools:context=".SplashActivity">
 
     <View
@@ -28,7 +28,7 @@
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
         android:text="Mtaa"
-        android:textColor="@color/colorAccent"
+        android:textColor="#07C1F0"
         android:textSize="40sp" />
 
     <TextView

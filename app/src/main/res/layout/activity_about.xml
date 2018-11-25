@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     tools:context=".AboutActivity">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="20dp">
 
-    <TextView
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textSize="28sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/about"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/about"
+                android:textColor="#07C1F0"
+                android:textSize="28sp" />
 
-</LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
