@@ -15,7 +15,7 @@ Mtaa is a real estate app designed and coded with ❤ by _group 14 members_.
   - [x] Screen Interaction Analysis 📋
   - [x] Architectural Design ⚙
   - [x] Navigation and User Design Interaction 📱
-  - [ ] Implementation 👩‍💻
+  - [x] Implementation 👩‍💻
   - [ ] Testing 🛠
   - [ ] Deployment 🌐 
   - [ ] Customer Evaluation 🔄
