@@ -10,8 +10,11 @@ import android.widget.Toast;
 
 public class SignUpActivity extends AppCompatActivity {
     Button btnsignnew;
-    EditText etUsername;
-    String name;
+    EditText etUsername, etid, etphone, etemail, etpassword, etconfirmpassword;
+    String name, phone_number, email, password, confirm_password;
+    String id_no;
+
+    Database myHelper = new Database(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +23,28 @@ public class SignUpActivity extends AppCompatActivity {
 
         btnsignnew = findViewById(R.id.signupbtn);
         etUsername = findViewById(R.id.etUsername);
-        name = etUsername.getText().toString();
+        etid = findViewById(R.id.etid);
+        etphone = findViewById(R.id.etphone);
+        etemail = findViewById(R.id.etemail);
+        etpassword = findViewById(R.id.etpassword);
+        etconfirmpassword = findViewById(R.id.etconfirmpass);
+
+
 
 
     }
 
     public void addUser(View view) {
-        if (name.equals(" ")) {
-            Toast.makeText(this, "Please fill in the fields", Toast.LENGTH_LONG).show();
-        } else
-            Toast.makeText(this, "Added " + name + "to users", Toast.LENGTH_LONG).show();
+        name = etUsername.getText().toString();
+        phone_number = etphone.getText().toString();
+        email = etemail.getText().toString();
+        id_no = etid.getText().toString();
+        password = etpassword.getText().toString();
+        confirm_password = etconfirmpassword.getText().toString();
+
+        myHelper.addUser(new Users(id_no, name, email, phone_number));
+        Toast.makeText(this, "Added " + name + " to users", Toast.LENGTH_LONG).show();
+
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
     }

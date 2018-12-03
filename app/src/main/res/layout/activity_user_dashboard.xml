@@ -78,7 +78,7 @@
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
                         android:scaleType="center"
-                        android:src="@drawable/homes" />
+                        android:src="@drawable/houses" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/apartment" />
+                        android:src="@drawable/apartments" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:src="@drawable/caresupport" />
+                        android:src="@drawable/support" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -258,7 +258,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/aboutone" />
+                        android:src="@drawable/about" />
 
                     <TextView
                         android:layout_width="wrap_content"

@@ -4,32 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
     tools:context=".AboutActivity">
 
     <android.support.v7.widget.CardView
-        android:layout_width="400dp"
-        android:layout_height="500dp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="40dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="20dp">
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:weightSum="5"
             android:orientation="vertical">
 
             <TextView
+                android:layout_height="0dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_weight="4"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="@string/about"
-                android:textColor="#07C1F0"
-                android:textSize="28sp" />
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D4D4D4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/likeimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/love" />
+
+                <ImageView
+                    android:id="@+id/shareimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/share" />
+            </LinearLayout>
 
         </LinearLayout>
 

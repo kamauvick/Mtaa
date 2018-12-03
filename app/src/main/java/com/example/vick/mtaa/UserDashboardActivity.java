@@ -185,8 +185,9 @@ public class UserDashboardActivity extends AppCompatActivity {
                 cardSales.setRadius(0);
                 cardSupport.setCardElevation(0);
                 cardSupport.setRadius(0);
-                // Intent i = new Intent(getApplicationContext(),AssetsViewActivity.class);
-                // startActivity(i);
+
+                Intent i = new Intent(getApplicationContext(), AboutActivity.class);
+                startActivity(i);
 
             }
         });
